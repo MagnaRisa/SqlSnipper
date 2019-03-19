@@ -1,0 +1,14 @@
+name: SQL_Snipper
+version: @VERSION@
+description: This plugin is specific to MagnaRisa and the trimming of the CoreProtect Database.
+main: com.magnarisa.SqlSnipper.SqlSnipper
+author: CreedTheFreak
+
+database: true
+
+commands:
+  sniphelp:
+    description: Shows the usage of the snip command and how you may be able to use it.
+
+  snip:
+    description: Snips the database using the given a type name. These type names correspond to files stored within the plugin.

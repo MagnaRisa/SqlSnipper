@@ -1,0 +1,49 @@
+###############################################################################
+# +-+-+-+-+-+-+-+-+-+ The SQL Snipper Configuration File -+-+-+-+-+-+-+-+-+-+ #
+###############################################################################
+# This is the type of database you are currently using. The supported types
+# of database's are currently only MySQL and SQLite which can be specified
+# in the below field.
+
+# MySQL or SQLite [DEFAULT]
+DatabaseType: SQLite
+
+###############################################################################
+# +-+-+-+-+-+-+-+-+-+-+-+-+-+- MySQL Configuration -+-+-+-+-+-+-+-+-+-+-+-+-+ #
+###############################################################################
+# The database information specifies where
+# The information of the Plugin should be stored
+# such as user data. If you do not know what MySQL is
+# or how to operate a MySQL server leave the value as SQLite
+
+# Below defines the connection information
+# for the MySQL database.
+MySQL:
+  # The Hostname of your SQL database
+  # Example: localhost:3306 or 127.0.0.1:3306
+  host: none
+
+  # The name of the Database to use
+  db_name: none
+
+  # The username of your database
+  user: none
+
+  # The password for the database user
+  password: none
+
+###############################################################################
+# +-+-+-+-+-+-+-+-+-+-+-+- SQL Lite Configuration +-+-+-+-+-+-+-+-+-+-+-+-+-+ #
+###############################################################################
+# This path is decided by this plugins path of /plugins/SqlSnipper
+# Thus to point to the directory of the database you would like to snip
+# Use the following example as a guide. This is intentionally left as none
+# So the server admins much define a path before continuing.
+# Example: ..\DatabaseFolder
+DatabasePath: none
+
+# This is simply the name of the database to snip. The path must be
+# defined before SqlSnipper will know where to look for this file.
+# Default is database.db but change this to the database name
+# you would like to snip.
+DatabaseName: database.db
